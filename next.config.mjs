@@ -11,8 +11,9 @@ const nextConfig = {
                 hostname: "cdn.dummyjson.com",
             },
         ],
+        unoptimized: true,
     },
-    distDir: "out",
+    output: "export",
 };
 
 export default nextConfig;
