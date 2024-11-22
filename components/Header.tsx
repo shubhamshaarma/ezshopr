@@ -42,7 +42,7 @@ function Header() {
     const userSignOut = async () => {
         try {
             await signOut(auth);
-            dispatch(clearUser(""));
+            dispatch(clearUser());
         } catch (error) {
             console.log(error);
         }
@@ -50,7 +50,7 @@ function Header() {
 
     useEffect(() => {
         if (user._id) dispatch(initCart(user._id));
-    }, [user._id]);
+    }, [user._id, dispatch]);
 
     return (
         <header className="px-4 sm:px-6 py-2 border-b sticky top-0 z-50 bg-white">

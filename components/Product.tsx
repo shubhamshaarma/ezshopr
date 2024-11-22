@@ -4,9 +4,7 @@ import { useAppSelector } from "@/lib/redux/hooks";
 import ProductCard from "./ProductCard";
 
 function Product() {
-    const { products, isPending, error } = useAppSelector(
-        (state) => state.products
-    );
+    const { products } = useAppSelector((state) => state.products);
 
     return (
         <section className="px-4 py-10 sm:px-6">

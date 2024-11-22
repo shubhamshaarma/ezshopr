@@ -8,7 +8,7 @@ function Banner() {
                 <div className="w-full md:w-2/3">
                     <div className="space-y-4 md:space-y-5">
                         <p className="text-white text-sm inline bg-black/40 p-2 rounded-md">
-                            Limited Time Only - Don’t Miss Out!
+                            Limited Time Only - Don&apos;t Miss Out!
                         </p>
                         <h2 className="text-3xl sm:text-4xl lg:text-5xl text-white font-medium">
                             Exclusive Festive Deals Await Shop Now & Save Big!

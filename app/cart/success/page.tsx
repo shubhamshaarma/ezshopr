@@ -25,13 +25,13 @@ function CartSuccessPage() {
         if (orderNumber && userId) {
             dispatch(clearCart(userId));
         }
-    }, [orderNumber, userId]);
+    }, [orderNumber, userId, dispatch]);
 
     return (
         <section className="flex items-center justify-center flex-col px-4 py-24 space-y-6">
             <SiTicktick className="text-[100px] text-green-400" />
             <h3 className="text-2xl font-medium text-gray-700">
-            Your order was placed successfully.
+                Your order was placed successfully.
             </h3>
 
             <div className="text-sm text-gray-500">

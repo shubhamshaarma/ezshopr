@@ -31,7 +31,7 @@ function CartPage() {
 
     useEffect(() => {
         if (_id) dispatch(initCart(_id));
-    }, [_id]);
+    }, [_id, dispatch]);
 
     return (
         <>

@@ -57,7 +57,7 @@ export const userAuthState = createAsyncThunk(
             });
         } catch (error) {
             return rejectWithValue(
-                "Failed to fetch user authentication state."
+                error || "Failed to fetch user authentication state."
             );
         }
     }
@@ -76,7 +76,7 @@ const userSlice = createSlice({
                 state.session = true;
             }
         },
-        clearUser: (state, _) => {
+        clearUser: (state) => {
             state._id = "";
             state.email = "";
             state.fullname = "";
