@@ -1,5 +1,3 @@
-"use client";
-
 import { db } from "@/lib/firebase/firebase";
 import { deleteDoc, doc, updateDoc } from "firebase/firestore";
 import Image from "next/image";

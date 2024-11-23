@@ -1,6 +1,6 @@
 import Cart from "@/components/Cart";
 
-function CartPage() {
+export default function CartPage() {
     return (
         <section className="px-4 sm:px-6 pt-6 pb-16">
             <div className="max-w-3xl m-auto">
@@ -13,5 +13,3 @@ function CartPage() {
         </section>
     );
 }
-
-export default CartPage;

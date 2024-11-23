@@ -1,16 +1,20 @@
 {
-  "hosting": {
-    "public": "out",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
-    ]
-  }
+    "hosting": {
+        "public": "out",
+        "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+        "rewrites": [
+            {
+                "source": "/cart",
+                "destination": "/cart.html"
+            },
+            {
+                "source": "/cart/**",
+                "destination": "/cart/success.html"
+            },
+            {
+                "source": "**",
+                "destination": "/index.html"
+            }
+        ]
+    }
 }
